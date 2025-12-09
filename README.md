@@ -96,8 +96,6 @@ In `application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/movielibrary
-spring.datasource.username=root
-spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 ```
 
@@ -143,15 +141,6 @@ http://localhost:8080/login
 
 ---
 
-## 📌 Screenshots (Optional)
-
-You can add these later:
-
-* Login page
-* Movie list
-* Add movie page
-
----
 
 ## 📚 Future Enhancements
 
