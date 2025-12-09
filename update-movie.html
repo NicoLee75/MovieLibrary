@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update Movie</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+
+<h1>Update Movie</h1>
+
+<form th:action="@{'/update/' + ${movie.id}}" th:object="${movie}" method="post">
+    <input type="text" th:field="*{title}" required>
+    <input type="text" th:field="*{genre}" required>
+    <input type="number" th:field="*{year}" required>
+    <input type="number" step="0.1" th:field="*{rating}" required>
+
+    <button type="submit">Update</button>
+</form>
+
+<a href="/">Back</a>
+
+</body>
+</html>
